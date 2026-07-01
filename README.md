@@ -11,7 +11,7 @@ A fine-tuned text classifier evaluating discourse quality on r/nba. Compares a c
 *   **Performance Delta:** -22.22% (Regression)
 
 ### Fine-Tuned Model Confusion Matrix
-| True \ Predicted | analysis | hot_take | reactionary_vent |
+| True / Predicted | analysis | hot_take | reactionary_vent |
 | :--- | :---: | :---: | :---: |
 | **analysis** | 0 | 0 | 4 |
 | **hot_take** | 0 | 1 | 11 |
