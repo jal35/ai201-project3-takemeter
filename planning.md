@@ -30,5 +30,6 @@ While accuracy serves as an overall health check, it fails to capture critical e
 A successful model must achieve a minimum macro F1-score of **0.70** and out-perform the zero-shot Llama-3.3 baseline model.
 
 ## 7. AI Tool Plan
-*   **System Prompt Generation**: Gemini was used to help design the interactive Python labeling script to accelerate dataset annotation.
-*   **Stress Testing**: An LLM was used to generate synthetic edge cases to refine prompt design for the zero-shot baseline.
+*   **Initial Intent**: Planned to use Gemini to assist with drafting the core classification pipeline structure, setting up the Groq zero-shot baseline script, and refining the initial r/nba text classification guidelines.
+*   **What was Reviewed & Revised**: Reviewed Gemini-generated system prompts for the Groq baseline. Revised the definitions to include explicit community-specific boundary rules (such as the "Stat-Driven Hot Take" and "Long-Form Vent") because the initial AI outputs were too generic and missed r/nba sub-community nuances.
+*   **What was Overridden**: Overridden an initial AI recommendation to use zero-shot LLM labeling to pre-classify the entire dataset automatically. Instead, I executed manual human annotation to establish an authentic ground truth, preventing the fine-tuned model from simply inheriting the baseline's exact systemic biases.
